@@ -1,0 +1,58 @@
+[colspan="3"],
+[rowspan="3"] {
+    background-color: #234E54;
+}
+
+[colspan="2"],
+[rowspan="2"] {
+    background-color: green;
+}
+
+[rowspan="4"],
+[colspan="4"] {
+    background-color: brown;
+}
+
+
+#pregunta1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #442A5D;
+}
+
+#pregunta2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #442A5D;
+}
+
+#pregunta3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #442A5D;
+}
+
+#pregunta4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #442A5D;
+}
+
+#pregunta5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #442A5D;
+}
+
+#pregunta6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #442A5D;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.comentarios {
+    text-align: center;
+
+}
+
+#pregunta3 .negrita {
+    background-color: yellow;
+}
