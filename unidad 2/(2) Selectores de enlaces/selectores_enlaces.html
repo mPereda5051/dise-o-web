@@ -5,12 +5,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Estilos compuestos 2</title>
 	<style type="text/css">
-		/* Incluir los selectores que faltan para lograr los requisitos del enunciado */
 		#capa1 {
 			color: #F9F6C3;
 			background-color: #789498;
 			border: thin solid #234E54;
+
+			a:hover {
+				background-color: #F9DDC3;
+			}
 		}
+
+
 
 		span.color1 {
 			background-color: #F9DDC3;
@@ -23,12 +28,24 @@
 		#capa2 {
 			background-color: #5A4074;
 			color: #F9F6C3;
+
+			a:hover {
+				background-color: #9786A8;
+			}
 		}
+
+		#capa2:hover a {
+			background-color: yellow;
+
+		}
+
 
 		#capa3 {
 			background-color: #895F38;
 		}
-
+		#capa3 a[href="http://www.google.es"]:hover{
+			background-color: #CECA85;
+		}
 		span.color3 {
 			background-color: #CECA85;
 		}
@@ -38,6 +55,9 @@
 		}
 
 		span.color4 {
+			background-color: #F9F6C3;
+		}
+		#capa4:hover a[href="http://www.madrid.org"]{
 			background-color: #F9F6C3;
 		}
 	</style>
@@ -80,7 +100,7 @@
 		Madrid que se pondrá <span class="color4"> con este fondo </span>.</p>
 	<div id="capa4">
 		<p>CAPA4 --- Diferentes enlaces:</p>
-		<p><a href="http://www.madrid.org" id="madrid">Comunidad de Madrid</a> (#capa4:hover
+		<p><a href="http://www.madrid.org" id="madrid">Comunidad de Madrid</a> (#capa4:hover)
 			a[href=&quot;http://www.madrid.org&quot;], al posicionar en capa4 el hipervinculo que apunta a Comunidad de
 			Madrid</p>
 		<p><a href="http://www.google.es">Google</a></p>

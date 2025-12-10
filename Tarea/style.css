@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "no se entiende.com";
+    src: url(fonts/MonsieurLaDoulaise-Regular.woff) format('woff'),
+        url(fonts/MonsieurLaDoulaise-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'segundo intento';
+    src: url(fonts/MrsSheppards-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'taka taka';
+    src: url(fonts/Galada-Regular.woff) format('woff');
+}
+p {
+    font-family: 'no se entiende.com';
+}
+h1{
+    font-family: 'no se entiende.com';
+}
+
+h2{
+    font-family: 'segundo intento';
+}
+
+h3{
+    font-family: 'taka taka';
+}
