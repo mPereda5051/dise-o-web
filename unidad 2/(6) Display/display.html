@@ -4,12 +4,52 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Bloques y lineas</title>
 	<style type="text/css">
-		* { /* Todos los elementos de la página tienen borde */
-			border: thin solid #442A5D;
-		}
-		
-		/* Del resto hay que crear clases por cada párrafo, en función de la propiedad display */
-		
+		* {
+	border: thin solid #442A5D;
+}
+
+/* Negrita comportándose como bloque */
+#negrita {
+	display: block;
+}
+
+/* Párrafos en línea */
+p.enlinea {
+	display: inline;
+}
+
+/* Párrafos con estilo lista */
+p.lista {
+	display: list-item;
+	margin-left: 20px;
+}
+
+/* Ocultar elemento */
+.oculto {
+	display: none;
+}
+
+/* Hipervínculo como bloque en línea */
+.bloqueenlinea {
+	display: inline-block;
+	width: 150px;
+	height: 60px;
+}
+
+/* Párrafos como celdas de tabla */
+p.tablecell {
+	display: table-cell;
+	width: 33%;
+	padding: 5px;
+}
+
+/* Párrafo desplazado */
+.desplazado {
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+
 	</style>
 </head>
 
@@ -17,19 +57,20 @@
 	<span>Con la propiedad display podemos cambiar la forma por defecto en que aparace cada elemento y hacer que un elemento como una negrita se comporte como si fuera un bloque: <span id="negrita"><strong><a>Negrita</a></strong></span>, y cuando continuamos la frase salta antes y después de la negrita de linea como cualquier elemento en bloque.</span>
 	<p>O hacer que un elemento como este párrafo se comporte como si fuera un elemento en linea.</p>
 
-	<p>Este es otro parrafo puesto en modo linea.</p>
-	<p>Párrafo normal.</p>
-	<p>Párrafo en estilo lista</p>
-	<p>Párrafo en estilo lista</p>
-	<p>También podemos utilizar display none para que un elemento no aparezca, como este párrafo repetido justo debajo.</p>
-	<p>También podemos utilizar display none para que un elemento no aparezca, como este párrafo repetido justo debajo.</p>
-	<p>Veamos ahora un <a href="http://www.google.es" class="bloqueenlinea">hipervinculo</a> en bloque en linea que si admite tamaño a diferencia del elemento en linea</p>
+	<p class="enlinea">O hacer que un elemento como este párrafo se comporte como si fuera un elemento en linea.</p>
 
-	<p>Vamos ahora a escribir tres párrafos que se comportarán como table-cell</p>
-	<p>Vamos ahora a escribir tres párrafos que se comportarán como table-cell</p>
-	<p>Vamos ahora a escribir tres párrafos que se comportarán como table-cell</p>
-	
-	<p>Párrafo desplazado: propiedad posición relativa desplazado desde arriba en 20 y desde la derecha en 20.</p>
-	<p>Las otras posibilidades en cuando a posición son static: se queda donde esta habitualmente, relativa se mueve respesto a esta, absoluta el elemento se mostrará en la posición indicada por las coordenadas y fija en la que el elemento se mantiene en las coordenadas, podemos ver un ejemplo en <a href="#">esta distribución</a></p>
+<p class="enlinea">Este es otro parrafo puesto en modo linea.</p>
+
+<p class="lista">Párrafo en estilo lista</p>
+<p class="lista">Párrafo en estilo lista</p>
+
+<p class="oculto">También podemos utilizar display none para que un elemento no aparezca, como este párrafo repetido justo debajo.</p>
+
+<p class="tablecell">Vamos ahora a escribir tres párrafos que se comportarán como table-cell</p>
+<p class="tablecell">Vamos ahora a escribir tres párrafos que se comportarán como table-cell</p>
+<p class="tablecell">Vamos ahora a escribir tres párrafos que se comportarán como table-cell</p>
+
+<p class="desplazado">Párrafo desplazado: propiedad posición relativa desplazado desde arriba en 20 y desde la derecha en 20.</p>
+
 </body>
 </html>

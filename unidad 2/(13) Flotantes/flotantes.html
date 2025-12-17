@@ -9,30 +9,52 @@
 		span.negrita{
 			font-weight: bold;
 		}
-		.derecha {
-			width: 3rem;
-			color: #F9F6C3;
-			background-color: #789498;
-			text-align: center;
-			font-weight: bold;
-			margin: 2px;
-			padding: 5px;
-			border: 2px solid #123D43;
-		}
-		.estrecho {
-			height: 8rem;			
-		}
-		.derechanoafectado {
-			color: #F9DDC3;
-			background-color: #31174A;
-			text-align: center;
-			font-weight: bold;			
-		}
-		.izquierda {
-			background-color: #789498;
-			height: 6rem;
-			margin: 2px;
-		}		
+/* Elementos flotantes a la derecha */
+.derecha {
+	float: right;
+	width: 3rem;
+	color: #F9F6C3;
+	background-color: #789498;
+	text-align: center;
+	font-weight: bold;
+	margin: 2px;
+	padding: 5px;
+	border: 2px solid #123D43;
+}
+
+/* Elementos flotantes a la izquierda */
+.izquierda {
+	float: left;
+	width: 4rem;
+	background-color: #789498;
+	height: 6rem;
+	margin: 2px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Imágenes estrechas flotantes */
+.estrecho {
+	height: 8rem;
+}
+
+/* Párrafo que NO debe verse afectado por floats */
+.parrafonoafectado {
+	clear: both;
+}
+
+/* Elementos flotantes que no admiten texto a su lado */
+.derechanoafectado {
+	float: right;
+	clear: right;
+	color: #F9DDC3;
+	background-color: #31174A;
+	text-align: center;
+	font-weight: bold;
+	margin: 2px;
+	padding: 5px;
+}
+	
 	</style>
 
 	</head>
