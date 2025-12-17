@@ -6,14 +6,15 @@ h1 {
 	cursor: text;
 	text-shadow: 3px 3px 2px #789498;
 }
-ul.redes li {
+ul li {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 12px;
 	font-style: italic;
 	/* Estilos de li para cumplir las especifiaciones */
 	color: #442A5D;
+	list-style: circle;
 }
-p.titulo {
+p {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 14px;
 	background-color: #F9DDC3;
@@ -27,7 +28,7 @@ p.titulo {
 	height: 1.5em;
 	vertical-align: middle;
 }
-{ /* Hay que conseguir que este estilo se aplique al posicionarse sobre el elemento con contenido LMSGI */
+a{ /* Hay que conseguir que este estilo se aplique al posicionarse sobre el elemento con contenido LMSGI */
 	font-weight: bold;
 	color: #FFF;
 }
